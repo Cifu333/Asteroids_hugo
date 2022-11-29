@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+//sample text
 public class Teleport : MonoBehaviour
 {
     public float limit_x;
