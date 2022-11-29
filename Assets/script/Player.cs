@@ -28,7 +28,7 @@ public class Player : MonoBehaviour
         {
             rb.AddForce(transform.up * vertical * speed_movement * Time.deltaTime);
         }
-        if (Input.GetButtonDown("Jump"));
+        if (Input.GetButtonDown("Jump"))
         {
             Instantiate(bala);
         }
