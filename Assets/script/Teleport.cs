@@ -18,6 +18,14 @@ public class Teleport : MonoBehaviour
         {
             transform.position = new Vector3(transform.position.x, limit_y, transform.position.z);
         }
+        if (transform.position.y > limit_x)
+        {
+            transform.position = new Vector3(-limit_x, transform.position.y, transform.position.z);
+        }
 
+        if (transform.position.y < -limit_x)
+        {
+            transform.position = new Vector3(limit_x, transform.position.y, transform.position.z);
+        }
     }
 }

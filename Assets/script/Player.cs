@@ -8,10 +8,12 @@ public class Player : MonoBehaviour
     public float speed_rotation;
     Rigidbody2D rb;
     public GameObject bala;
+    Animator anim;
     // Start is called before the first frame update
     void Start()
     {
         rb= GetComponent<Rigidbody2D>();
+        anim= GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -28,9 +30,13 @@ public class Player : MonoBehaviour
         {
             rb.AddForce(transform.up * vertical * speed_movement * Time.deltaTime);
         }
+
+        anim.SetBool("Movement", vertical > 0);
+
         if (Input.GetButtonDown("Jump"))
         {
-            Instantiate(bala);
+            GameObject temp= Instantiate(bala,transform.position,transform.rotation);
+            Destroy(temp, 2);
         }
     }
 }
