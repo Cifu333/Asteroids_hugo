@@ -126,6 +126,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: a6f96ae509aee814a9bd4a00dd9f744c, type: 3}
   - {fileID: 21300000, guid: d3d73eb3eac773a4d9d068482e510b85, type: 3}
   - {fileID: 21300000, guid: 30253e28af9e5054a98d14a26949f577, type: 3}
+  manager: {fileID: 0}
 --- !u!114 &1732729444756021561
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -155,4 +156,4 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.5
+  m_Radius: 1
